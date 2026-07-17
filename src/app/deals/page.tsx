@@ -23,7 +23,7 @@ const acProducts = [
       "Gold Fin Evaporator & Condenser",
       "Low Voltage Startup (150V)"
     ],
-    warranty: "10 Years Compressor, 4 Years PCB, 1 Year Parts",
+    warranty: "10 Years Compressor, 1 Year Parts Warranty",
     image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (1).jpeg"
   },
   {
@@ -39,7 +39,7 @@ const acProducts = [
       "Turbo Cooling Mode",
       "Self-Diagnosis Auto Restart"
     ],
-    warranty: "5 Years Compressor, 1 Year Parts & Labor",
+    warranty: "10 Years Compressor, 1 Year Parts Warranty",
     image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (2).jpeg"
   },
   {
@@ -55,8 +55,40 @@ const acProducts = [
       "Intelligent Defrost Logic",
       "Commercial Grade Sturdy Body"
     ],
-    warranty: "3 Years Compressor, 1 Year Parts",
+    warranty: "10 Years Compressor, 1 Year Parts Warranty",
     image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (3).jpeg"
+  },
+  {
+    id: "p3-2",
+    name: "Pearl Heavy Duty Floor Standing AC",
+    capacity: "4.0 Ton",
+    type: "Floor Standing",
+    price: "525,000",
+    features: [
+      "Turbo Air Throw (Up to 18 meters)",
+      "Vibrant LCD Digital Display Panel",
+      "Multi-Bend Heat Exchanger",
+      "Intelligent Defrost Logic",
+      "Commercial Grade Sturdy Body"
+    ],
+    warranty: "10 Years Compressor, 1 Year Parts Warranty",
+    image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (6).jpeg"
+  },
+  {
+    id: "p3-3",
+    name: "Pearl Heavy Duty Floor Standing AC",
+    capacity: "8.0 Ton",
+    type: "Floor Standing",
+    price: "985,000",
+    features: [
+      "High capacity industrial air throw",
+      "Digital display controls",
+      "Reinforced heavy-duty body casing",
+      "Dual compressor configuration",
+      "High efficiency cooling output"
+    ],
+    warranty: "10 Years Compressor, 1 Year Parts Warranty",
+    image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (7).jpeg"
   },
   {
     id: "p4",
@@ -71,7 +103,7 @@ const acProducts = [
       "Quiet Comfort Sleep Setting",
       "Corrosion Resistant Cabinet"
     ],
-    warranty: "10 Years Compressor, 1 Year Parts",
+    warranty: "10 Years Compressor, 1 Year Parts Warranty",
     image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (4).jpeg"
   },
   {
@@ -87,7 +119,7 @@ const acProducts = [
       "Super Slim Panel Design",
       "Easy Clean Grille Assembly"
     ],
-    warranty: "3 Years Compressor, 1 Year Parts",
+    warranty: "10 Years Compressor, 1 Year Parts Warranty",
     image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (5).jpeg"
   }
 ];
