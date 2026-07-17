@@ -68,21 +68,18 @@ const featuredDeals = [
   {
     name: "Pearl Smart Inverter AC",
     capacity: "1.5 Ton",
-    price: "185,000",
     features: ["75% Energy Saving", "T3 Inverter Compressor", "Heat & Cool", "10 Years Compressor & 1 Year Parts Warranty"],
     image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (1).jpeg"
   },
   {
     name: "Pearl Eco-Split AC",
     capacity: "1.0 Ton",
-    price: "155,000",
     features: ["Gold Fin Condenser", "Low Voltage Startup", "R410 Eco Gas", "10 Years Compressor & 1 Year Parts Warranty"],
     image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (2).jpeg"
   },
   {
     name: "Pearl Floor Standing AC",
     capacity: "2.0 Ton",
-    price: "350,000",
     features: ["Heavy Duty Air Throw", "Digital Control Panel", "Auto Restart", "10 Years Compressor & 1 Year Parts Warranty"],
     image: "/images/products/flore mounted 1.jpeg"
   }
@@ -270,7 +267,7 @@ export default function Home() {
               {featuredDeals.map((product, idx) => {
                 const buyLink = getWhatsAppLink(
                   OFFICIAL_PHONE,
-                  `Hi Ali Cool Point, I want to order the Pearl AC: "${product.name} (${product.capacity})" priced at PKR ${product.price}. Please share availability and order steps.`
+                  `Hi Ali Cool Point, I want to inquire about ordering the Pearl AC: "${product.name} (${product.capacity})". Please share availability, pricing, and order steps.`
                 );
                 return (
                   <div key={idx} className="flex flex-col bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
@@ -307,18 +304,14 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="mt-6 border-t border-slate-100 pt-4 flex items-center justify-between">
-                        <div>
-                          <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Price</span>
-                          <span className="text-xl font-extrabold text-slate-900">PKR {product.price}</span>
-                        </div>
+                      <div className="mt-6 border-t border-slate-100 pt-4">
                         <a
                           href={buyLink}
                           target="_blank"
                           rel="noopener noreferrer"
                           className={cn(
                             buttonVariants({ variant: "default", size: "sm" }),
-                            "bg-emerald-600 hover:bg-emerald-700 text-white font-semibold"
+                            "bg-emerald-600 hover:bg-emerald-700 text-white font-semibold w-full justify-center"
                           )}
                         >
                           Order via WhatsApp

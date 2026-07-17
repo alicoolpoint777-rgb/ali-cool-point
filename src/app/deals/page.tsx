@@ -15,7 +15,6 @@ const acProducts = [
     name: "Pearl Smart Inverter AC (Wall Mounted)",
     capacity: "1.5 Ton",
     type: "Split AC",
-    price: "185,000",
     features: [
       "Up to 75% Energy Saving",
       "T3 Inverter Compressor (Runs at 52°C)",
@@ -31,7 +30,6 @@ const acProducts = [
     name: "Pearl Eco-Split AC (Wall Mounted)",
     capacity: "1.0 Ton",
     type: "Split AC",
-    price: "155,000",
     features: [
       "High Efficiency Heat Exchanger",
       "Low Noise Indoor Blowers",
@@ -47,7 +45,6 @@ const acProducts = [
     name: "Pearl Heavy Duty Floor Standing AC",
     capacity: "2.0 Ton",
     type: "Floor Standing",
-    price: "350,000",
     features: [
       "Turbo Air Throw (Up to 15 meters)",
       "Vibrant LCD Digital Display Panel",
@@ -63,7 +60,6 @@ const acProducts = [
     name: "Pearl Heavy Duty Floor Standing AC",
     capacity: "4.0 Ton",
     type: "Floor Standing",
-    price: "525,000",
     features: [
       "Turbo Air Throw (Up to 18 meters)",
       "Vibrant LCD Digital Display Panel",
@@ -79,7 +75,6 @@ const acProducts = [
     name: "Pearl Heavy Duty Floor Standing AC",
     capacity: "8.0 Ton",
     type: "Floor Standing",
-    price: "985,000",
     features: [
       "High capacity industrial air throw",
       "Digital display controls",
@@ -95,7 +90,6 @@ const acProducts = [
     name: "Pearl Executive Split AC (Wall Mounted)",
     capacity: "2.0 Ton",
     type: "Split AC",
-    price: "255,000",
     features: [
       "Wide Voltage Operation range",
       "Auto Clean Evaporator Function",
@@ -111,7 +105,6 @@ const acProducts = [
     name: "Pearl Cassette Type Commercial AC",
     capacity: "4.0 Ton",
     type: "Cassette AC",
-    price: "385,000",
     features: [
       "360-Degree Round Flow Air Distribution",
       "High Lift Built-in Water Drain Pump",
@@ -177,7 +170,7 @@ export default function Deals() {
               {filteredProducts.map((product) => {
                 const buyLink = getWhatsAppLink(
                   OFFICIAL_PHONE,
-                  `Hi Ali Cool Point, I would like to order the AC model: "${product.name}" (${product.capacity} capacity). The listed price is PKR ${product.price}. Please provide invoice and availability details.`
+                  `Hi Ali Cool Point, I would like to inquire about ordering the AC model: "${product.name}" (${product.capacity} capacity). Please provide pricing, invoice, and availability details.`
                 );
 
                 return (
@@ -236,22 +229,18 @@ export default function Deals() {
                       </div>
 
                       {/* Pricing & CTA */}
-                      <div className="mt-6 border-t border-slate-100 pt-4 flex items-center justify-between">
-                        <div>
-                          <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Price</span>
-                          <span className="text-xl font-extrabold text-slate-900">PKR {product.price}</span>
-                        </div>
+                      <div className="mt-6 border-t border-slate-100 pt-4">
                         <a
                           href={buyLink}
                           target="_blank"
                           rel="noopener noreferrer"
                           className={cn(
                             buttonVariants({ variant: "default" }),
-                            "bg-emerald-600 hover:bg-emerald-700 text-white font-semibold flex items-center gap-1.5"
+                            "bg-emerald-600 hover:bg-emerald-700 text-white font-semibold flex items-center justify-center gap-1.5 w-full"
                           )}
                         >
                           <BadgeDollarSign className="h-4 w-4" />
-                          Buy on WhatsApp
+                          Order via WhatsApp
                         </a>
                       </div>
                     </div>
