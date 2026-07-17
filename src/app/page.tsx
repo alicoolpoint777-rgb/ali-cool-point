@@ -119,8 +119,8 @@ export default function Home() {
                   <ShieldCheck className="h-4 w-4" />
                   SECP & FBR Registered SMC-Private Limited
                 </div>
-                <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-                  Karachi's Premier <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">AC & Engineering</span> Specialists
+                <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight uppercase">
+                  HVAC Electrical <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Maintenance</span> & Renovation
                 </h1>
                 <p className="text-base sm:text-lg text-slate-300 max-w-xl mx-auto lg:mx-0">
                   Authorized Dealer and Certified Service Centre for **Pearl Air Conditioners**. Specializing in expert installations, repairs, commercial renovations, false ceiling, paint, and woodwork.
