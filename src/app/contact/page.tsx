@@ -204,8 +204,8 @@ Message: ${formData.message}`;
                       <div>
                         <span className="font-bold text-slate-800 block">Mobile Numbers</span>
                         <p className="text-xs text-slate-500 mt-0.5">
-                          Primary: <a href="tel:+923004599911" className="hover:text-primary transition-colors">0300-4599911</a> (Hasnain Ali) <br />
-                          Secondary: <a href="tel:+923172615265" className="hover:text-primary transition-colors">0317-2615265</a>
+                          Primary: <a href="tel:03004599911" className="hover:text-primary transition-colors">0300-4599911</a> (Hasnain Ali) <br />
+                          Secondary: <a href="tel:03172615265" className="hover:text-primary transition-colors">0317-2615265</a>
                         </p>
                       </div>
                     </div>

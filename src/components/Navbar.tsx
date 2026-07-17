@@ -69,7 +69,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center space-x-4">
           <a
-            href={`tel:+923004599911`}
+            href="tel:03004599911"
             className={cn(
               buttonVariants({ variant: "outline" }),
               "border-primary/20 text-foreground hover:bg-primary/5 flex items-center gap-2"
@@ -136,7 +136,7 @@ export default function Navbar() {
               </nav>
               <div className="flex flex-col space-y-3 mt-8">
                 <a
-                  href={`tel:+923004599911`}
+                  href="tel:03004599911"
                   className={cn(
                     buttonVariants({ variant: "outline" }),
                     "w-full flex items-center justify-center gap-2"
