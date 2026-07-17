@@ -89,10 +89,12 @@ const featuredDeals = [
 ];
 
 const clients = [
-  { name: "Virtual University", logo: "Virtual University" },
+  { name: "State Bank of Pakistan", logo: "State Bank of Pakistan" },
+  { name: "Habib Bank Limited (HBL)", logo: "Habib Bank Limited (HBL)" },
   { name: "Meezan Bank", logo: "Meezan Bank" },
-  { name: "TCS", logo: "TCS" },
+  { name: "TCS Express", logo: "TCS Express" },
   { name: "foodpanda", logo: "foodpanda" },
+  { name: "Virtual University", logo: "Virtual University" },
 ];
 
 export default function Home() {
@@ -139,12 +141,9 @@ export default function Home() {
                     href={quoteLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={cn(
-                      buttonVariants({ variant: "outline", size: "lg" }),
-                      "border-white/20 text-white hover:bg-white/10 w-full sm:w-auto"
-                    )}
+                    className="inline-flex items-center justify-center rounded-lg border border-white/20 bg-transparent px-5 py-2.5 text-sm font-semibold text-white hover:bg-white/10 hover:text-white transition-colors w-full sm:w-auto"
                   >
-                    Get Free Quote (WhatsApp)
+                    Get Free Quote
                   </a>
                 </div>
               </div>
@@ -353,11 +352,11 @@ export default function Home() {
             </h3>
             
             {/* Logo grid wrapper */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center justify-items-center">
               {clients.map((client, idx) => (
                 <div 
                   key={idx} 
-                  className="flex items-center justify-center p-6 h-16 w-full max-w-[200px] border border-slate-100 rounded-xl bg-slate-50/50 shadow-sm text-slate-500 font-heading font-extrabold text-sm uppercase tracking-wider transition-colors hover:text-slate-800"
+                  className="flex items-center justify-center p-6 h-16 w-full max-w-[200px] border border-slate-100 rounded-xl bg-slate-50/50 shadow-sm text-slate-500 font-heading font-extrabold text-xs uppercase tracking-wider transition-colors hover:text-slate-800 text-center"
                 >
                   {client.name}
                 </div>
