@@ -24,7 +24,7 @@ const acProducts = [
       "Sleep and Silent Comfort settings"
     ],
     warranty: "10 Years Compressor, 1 Year Parts Warranty",
-    image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (1).jpeg"
+    image: "/images/products/wall_mounted_split_ac.svg"
   },
   {
     id: "p-wind-free",
@@ -39,7 +39,7 @@ const acProducts = [
       "Self-Diagnosis Auto Restart"
     ],
     warranty: "10 Years Compressor, 1 Year Parts Warranty",
-    image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (2).jpeg"
+    image: "/images/products/wind_free_split_ac.svg"
   },
 
   // --- LIGHT COMMERCIAL PRODUCTS ---
