@@ -84,7 +84,7 @@ const featuredDeals = [
     capacity: "2.0 Ton",
     price: "255,000",
     features: ["Heavy Duty Air Throw", "Digital Control Panel", "Auto Restart", "10 Years Compressor & 1 Year Parts Warranty"],
-    image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (3).jpeg"
+    image: "/images/products/flore mounted 1.jpeg"
   }
 ];
 

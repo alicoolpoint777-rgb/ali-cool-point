@@ -56,7 +56,7 @@ const acProducts = [
       "Commercial Grade Sturdy Body"
     ],
     warranty: "10 Years Compressor, 1 Year Parts Warranty",
-    image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (3).jpeg"
+    image: "/images/products/flore mounted 1.jpeg"
   },
   {
     id: "p3-2",
@@ -72,7 +72,7 @@ const acProducts = [
       "Commercial Grade Sturdy Body"
     ],
     warranty: "10 Years Compressor, 1 Year Parts Warranty",
-    image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (6).jpeg"
+    image: "/images/products/flore mounted 2.jpeg"
   },
   {
     id: "p3-3",
@@ -88,7 +88,7 @@ const acProducts = [
       "High efficiency cooling output"
     ],
     warranty: "10 Years Compressor, 1 Year Parts Warranty",
-    image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (7).jpeg"
+    image: "/images/products/flore mounted 3.jpeg"
   },
   {
     id: "p4",
