@@ -47,7 +47,7 @@ const acProducts = [
     name: "Pearl Heavy Duty Floor Standing AC",
     capacity: "2.0 Ton",
     type: "Floor Standing",
-    price: "255,000",
+    price: "350,000",
     features: [
       "Turbo Air Throw (Up to 15 meters)",
       "Vibrant LCD Digital Display Panel",
@@ -107,7 +107,23 @@ const acProducts = [
     image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (4).jpeg"
   },
   {
-    id: "p5",
+    id: "p5-1",
+    name: "Pearl Cassette Type Commercial AC",
+    capacity: "2.0 Ton",
+    type: "Cassette AC",
+    price: "285,000",
+    features: [
+      "360-Degree Round Flow Air Distribution",
+      "High Lift Built-in Water Drain Pump",
+      "Fresh Air Intake Cutout",
+      "Super Slim Panel Design",
+      "Easy Clean Grille Assembly"
+    ],
+    warranty: "10 Years Compressor, 1 Year Parts Warranty",
+    image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (10).jpeg"
+  },
+  {
+    id: "p5-2",
     name: "Pearl Cassette Type Commercial AC",
     capacity: "4.0 Ton",
     type: "Cassette AC",
@@ -121,6 +137,22 @@ const acProducts = [
     ],
     warranty: "10 Years Compressor, 1 Year Parts Warranty",
     image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (5).jpeg"
+  },
+  {
+    id: "p5-3",
+    name: "Pearl Cassette Type Commercial AC",
+    capacity: "8.0 Ton",
+    type: "Cassette AC",
+    price: "785,000",
+    features: [
+      "360-Degree Round Flow Air Distribution",
+      "High Lift Built-in Water Drain Pump",
+      "Fresh Air Intake Cutout",
+      "Super Slim Panel Design",
+      "Easy Clean Grille Assembly"
+    ],
+    warranty: "10 Years Compressor, 1 Year Parts Warranty",
+    image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (11).jpeg"
   }
 ];
 

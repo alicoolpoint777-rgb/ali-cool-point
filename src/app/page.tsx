@@ -82,7 +82,7 @@ const featuredDeals = [
   {
     name: "Pearl Floor Standing AC",
     capacity: "2.0 Ton",
-    price: "255,000",
+    price: "350,000",
     features: ["Heavy Duty Air Throw", "Digital Control Panel", "Auto Restart", "10 Years Compressor & 1 Year Parts Warranty"],
     image: "/images/products/flore mounted 1.jpeg"
   }
