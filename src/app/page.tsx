@@ -68,21 +68,21 @@ const featuredDeals = [
   {
     name: "Pearl Smart Inverter AC",
     capacity: "1.5 Ton",
-    price: "155,000",
+    price: "185,000",
     features: ["75% Energy Saving", "T3 Inverter Compressor", "Heat & Cool", "10 Years Warranty"],
     image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (1).jpeg"
   },
   {
     name: "Pearl Eco-Split AC",
     capacity: "1.0 Ton",
-    price: "118,000",
+    price: "155,000",
     features: ["Gold Fin Condenser", "Low Voltage Startup", "R410 Eco Gas", "5 Years Warranty"],
     image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (2).jpeg"
   },
   {
     name: "Pearl Floor Standing AC",
     capacity: "2.0 Ton",
-    price: "245,000",
+    price: "255,000",
     features: ["Heavy Duty Air Throw", "Digital Control Panel", "Auto Restart", "For Large Halls"],
     image: "/images/products/WhatsApp Image 2026-07-16 at 11.13.35 AM (3).jpeg"
   }

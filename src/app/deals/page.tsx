@@ -15,7 +15,7 @@ const acProducts = [
     name: "Pearl Smart Inverter AC (Wall Mounted)",
     capacity: "1.5 Ton",
     type: "Split AC",
-    price: "155,000",
+    price: "185,000",
     features: [
       "Up to 75% Energy Saving",
       "T3 Inverter Compressor (Runs at 52°C)",
@@ -31,7 +31,7 @@ const acProducts = [
     name: "Pearl Eco-Split AC (Wall Mounted)",
     capacity: "1.0 Ton",
     type: "Split AC",
-    price: "118,000",
+    price: "155,000",
     features: [
       "High Efficiency Heat Exchanger",
       "Low Noise Indoor Blowers",
@@ -47,7 +47,7 @@ const acProducts = [
     name: "Pearl Heavy Duty Floor Standing AC",
     capacity: "2.0 Ton",
     type: "Floor Standing",
-    price: "245,000",
+    price: "255,000",
     features: [
       "Turbo Air Throw (Up to 15 meters)",
       "Vibrant LCD Digital Display Panel",
@@ -63,7 +63,7 @@ const acProducts = [
     name: "Pearl Executive Split AC (Wall Mounted)",
     capacity: "2.0 Ton",
     type: "Split AC",
-    price: "192,000",
+    price: "255,000",
     features: [
       "Wide Voltage Operation range",
       "Auto Clean Evaporator Function",
