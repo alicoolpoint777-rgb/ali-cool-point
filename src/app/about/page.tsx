@@ -181,13 +181,13 @@ export default function About() {
                 <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-slate-100 shadow-inner mb-4 group-hover:scale-102 transition-transform duration-300">
                   <Image
                     src="/images/team/technician.jpg"
-                    alt="Asgar Malik"
+                    alt="Asghar Malik"
                     fill
                     className="object-cover"
                     sizes="192px"
                   />
                 </div>
-                <h3 className="font-heading text-lg font-bold text-slate-900">Asgar Malik</h3>
+                <h3 className="font-heading text-lg font-bold text-slate-900">Asghar Malik</h3>
                 <p className="text-xs text-primary font-semibold mt-1">Best Technician</p>
                 <p className="text-[11px] text-slate-400 mt-2">
                   Delivering high-precision diagnostic maintenance and quick emergency onsite repairs.
