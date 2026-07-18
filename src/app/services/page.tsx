@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -10,6 +11,7 @@ const serviceDetails = [
   {
     title: "AC Dealer & Installation Services",
     intro: "We are the authorized service center and business partner for Pearl Air Conditioners. Our engineers strictly follow official brand standards.",
+    image: "/images/services/service_ac_v2.jpg",
     points: [
       "Authentic split, floor standing, and cassette AC sales",
       "Official 6-Month gas leakage and drain installation warranty",
@@ -20,6 +22,7 @@ const serviceDetails = [
   {
     title: "Commercial Maintenance & Renovation",
     intro: "Complete commercial property renovation and maintenance contracts tailored for banks, universities, offices, and warehouses.",
+    image: "/images/services/service_renovation_v2.jpg",
     points: [
       "Custom layout plans for corporate renovations",
       "Structural inspects and preventative maintenance",
@@ -30,6 +33,7 @@ const serviceDetails = [
   {
     title: "False Ceiling & Gypsum Fitting",
     intro: "Sleek ceiling layouts that enhance interior illumination, heat insulation, and sound proofing.",
+    image: "/images/services/service_ceiling_v2.jpg",
     points: [
       "Gypsum, POP, and PVC false ceiling installations",
       "Durable aluminum panel grids for damp zones",
@@ -40,6 +44,7 @@ const serviceDetails = [
   {
     title: "Professional Paint & Decor",
     intro: "Transforming surfaces using high-quality paints and careful surface preparations.",
+    image: "/images/services/service_paint_v2.jpg",
     points: [
       "High durability weather-sheet coating for exterior facades",
       "Premium gloss, matte, and velvet interior wall finishes",
@@ -50,6 +55,7 @@ const serviceDetails = [
   {
     title: "Custom Wooden & Carpentry Work",
     intro: "Bespoke carpentry and wood finishings.",
+    image: "/images/services/service_wood_v2.jpg",
     points: [
       "Kitchen cabinets, corporate desks, and partitions",
       "Solid and semi-solid door installations and lock setups",
@@ -90,13 +96,25 @@ export default function Services() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {serviceDetails.map((service, idx) => (
-                <Card key={idx} className="border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow bg-white">
-                  <CardHeader className="p-6">
-                    <CardTitle className="font-heading text-lg font-bold text-slate-900">{service.title}</CardTitle>
-                    <CardDescription className="text-xs leading-relaxed mt-2 text-slate-500">
-                      {service.intro}
-                    </CardDescription>
-                  </CardHeader>
+                <Card key={idx} className="border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow bg-white overflow-hidden group">
+                  <div>
+                    {/* Representative Image */}
+                    <div className="relative h-48 w-full bg-slate-100 overflow-hidden border-b border-slate-100">
+                      <Image
+                        src={service.image}
+                        alt={service.title}
+                        fill
+                        className="object-cover group-hover:scale-103 transition-transform duration-500"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                      />
+                    </div>
+                    <CardHeader className="p-6 pb-4">
+                      <CardTitle className="font-heading text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">{service.title}</CardTitle>
+                      <CardDescription className="text-xs leading-relaxed mt-2 text-slate-500">
+                        {service.intro}
+                      </CardDescription>
+                    </CardHeader>
+                  </div>
                   <CardContent className="p-6 pt-0 flex-grow flex flex-col justify-between">
                     <div className="space-y-2 mt-2">
                       {service.points.map((point, pIdx) => (

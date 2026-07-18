@@ -146,6 +146,57 @@ export default function About() {
           </div>
         </section>
 
+        {/* Our Team Section */}
+        <section className="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-2xl mx-auto mb-12">
+              <span className="text-xs font-semibold text-primary uppercase tracking-widest block mb-1">ACP Experts</span>
+              <h2 className="font-heading text-3xl font-extrabold text-slate-900 tracking-tight">Our Professional Team</h2>
+              <p className="text-sm text-slate-500 mt-2">
+                Our HVAC projects are designed by certified engineering professionals and executed by top-tier technical staff.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto justify-items-center">
+              {/* Engineer: Asif Iqbal */}
+              <div className="flex flex-col items-center bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow w-full max-w-[280px] text-center group">
+                <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-slate-100 shadow-inner mb-4 group-hover:scale-102 transition-transform duration-300">
+                  <Image
+                    src="/images/team/engineer.jpg"
+                    alt="Asif Iqbal"
+                    fill
+                    className="object-cover"
+                    sizes="192px"
+                  />
+                </div>
+                <h3 className="font-heading text-lg font-bold text-slate-900">Asif Iqbal</h3>
+                <p className="text-xs text-primary font-semibold mt-1">Registered Engineer</p>
+                <p className="text-[11px] text-slate-400 mt-2">
+                  In charge of corporate design, safety compliance, and mechanical structures validation.
+                </p>
+              </div>
+
+              {/* Technician */}
+              <div className="flex flex-col items-center bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow w-full max-w-[280px] text-center group">
+                <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-slate-100 shadow-inner mb-4 group-hover:scale-102 transition-transform duration-300">
+                  <Image
+                    src="/images/team/technician.jpg"
+                    alt="Best Technician"
+                    fill
+                    className="object-cover"
+                    sizes="192px"
+                  />
+                </div>
+                <h3 className="font-heading text-lg font-bold text-slate-900">Best Technician</h3>
+                <p className="text-xs text-slate-400 mt-1">Technical Execution Specialist</p>
+                <p className="text-[11px] text-slate-400 mt-2">
+                  Delivering high-precision diagnostic maintenance and quick emergency onsite repairs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Core Values Section */}
         <section className="py-16 sm:py-24 bg-white">
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

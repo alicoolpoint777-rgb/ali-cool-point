@@ -26,30 +26,35 @@ const servicesPreview = [
     title: "AC Installation & Repair",
     desc: "Authorized Pearl Dealer & Service Centre. Complete split, floor stand, and cassette AC setup, maintenance, and gas charging.",
     icon: Wrench,
+    image: "/images/services/service_ac_v2.jpg",
     href: "/services",
   },
   {
     title: "Commercial Renovation",
     desc: "Complete building maintenance and structural renovations designed to enhance business functionality and visual appeal.",
     icon: Settings,
+    image: "/images/services/service_renovation_v2.jpg",
     href: "/services",
   },
   {
     title: "Color / Paint Work",
     desc: "Professional interior and exterior painting services using premium materials for long-lasting, elegant finishes.",
     icon: Palette,
+    image: "/images/services/service_paint_v2.jpg",
     href: "/services",
   },
   {
     title: "Wooden & Carpentry Work",
     desc: "Custom wood cabinet designing, door installations, partition setups, repairs, and professional polishing solutions.",
     icon: Hammer,
+    image: "/images/services/service_wood_v2.jpg",
     href: "/services",
   },
   {
     title: "False Ceiling Work",
     desc: "Expert installations of gypsum, POP, and aluminum ceiling systems with premium LED lighting setups.",
     icon: Grid,
+    image: "/images/services/service_ceiling_v2.jpg",
     href: "/services",
   },
 ];
@@ -58,6 +63,7 @@ const trustBadges = [
   { name: "SECP", doc: "secp_certificate.pdf", details: "Incorporated Company (SMC-Pvt) Ltd" },
   { name: "FBR NTN", doc: "fbr_ntn.pdf", details: "Registered Active Income Taxpayer" },
   { name: "SRB STN", doc: "srb_stn.pdf", details: "Sindh Sales Tax Registered Firm" },
+  { name: "PEC", doc: "pec_certificate.pdf", details: "Pakistan Engineering Council Registered" },
   { name: "KCCI", doc: "kcci_certificate.jpg", details: "Karachi Chamber Member (#150350)" },
   { name: "SESSI", doc: "sessi_certificate.pdf", details: "Social Security Employer Registered" },
   { name: "Labour Dept", doc: "labour_certificate.pdf", details: "Sindh Shops & Establishments Act" },
@@ -89,9 +95,15 @@ const clients = [
   { name: "State Bank of Pakistan", logo: "State Bank of Pakistan" },
   { name: "Habib Bank Limited (HBL)", logo: "Habib Bank Limited (HBL)" },
   { name: "Meezan Bank", logo: "Meezan Bank" },
+  { name: "United Bank Limited (UBL)", logo: "United Bank Limited (UBL)" },
+  { name: "Bank Alfalah", logo: "Bank Alfalah" },
+  { name: "National Bank (NBP)", logo: "National Bank (NBP)" },
+  { name: "Indus Motor (Toyota)", logo: "Indus Motor (Toyota)" },
+  { name: "Shell Pakistan", logo: "Shell Pakistan" },
   { name: "TCS Express", logo: "TCS Express" },
-  { name: "foodpanda", logo: "foodpanda" },
+  { name: "foodpanda Pakistan", logo: "foodpanda Pakistan" },
   { name: "Virtual University", logo: "Virtual University" },
+  { name: "PTCL", logo: "PTCL" },
 ];
 
 export default function Home() {
@@ -174,7 +186,7 @@ export default function Home() {
             </div>
             
             {/* Grid of Trust Badges */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4 items-stretch">
+            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 items-stretch">
               {trustBadges.map((badge, idx) => (
                 <Link
                   key={idx}
@@ -223,9 +235,19 @@ export default function Home() {
               {servicesPreview.map((service, idx) => {
                 const IconComponent = service.icon;
                 return (
-                  <Card key={idx} className="border border-slate-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-primary/20 flex flex-col justify-between group">
-                    <CardContent className="p-5 flex flex-col h-full justify-between">
-                      <div>
+                  <Card key={idx} className="border border-slate-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-primary/20 flex flex-col justify-between group overflow-hidden bg-white">
+                    <div>
+                      {/* Image Header */}
+                      <div className="relative h-32 w-full bg-slate-100 overflow-hidden">
+                        <Image
+                          src={service.image}
+                          alt={service.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          sizes="(max-width: 768px) 100vw, 20vw"
+                        />
+                      </div>
+                      <CardContent className="p-5">
                         <div className="h-10 w-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
                           <IconComponent className="h-5 w-5" />
                         </div>
@@ -235,14 +257,16 @@ export default function Home() {
                         <p className="text-xs text-slate-500 leading-relaxed">
                           {service.desc}
                         </p>
-                      </div>
+                      </CardContent>
+                    </div>
+                    <div className="p-5 pt-0">
                       <Link 
                         href={service.href} 
-                        className="text-xs font-semibold text-primary flex items-center gap-0.5 mt-4 group-hover:translate-x-1 transition-transform"
+                        className="text-xs font-semibold text-primary flex items-center gap-0.5 group-hover:translate-x-1 transition-transform"
                       >
                         Learn More <ChevronRight className="h-3.5 w-3.5" />
                       </Link>
-                    </CardContent>
+                    </div>
                   </Card>
                 );
               })}
