@@ -10,7 +10,6 @@ const certificates = [
   {
     id: "secp",
     name: "SECP Incorporation Certificate",
-    number: "CUIN: 0324097",
     issuer: "Securities and Exchange Commission of Pakistan",
     description: "Incorporated under the Companies Act, 2017 as a Private Limited Company limited by shares (SMC-Private) Limited.",
     logo: "/images/logos/secp_logo.jpg"
@@ -18,7 +17,6 @@ const certificates = [
   {
     id: "srb",
     name: "Sindh Revenue Board STN",
-    number: "SSTN: S4791217-0",
     issuer: "Government of Sindh, Sindh Revenue Board",
     description: "Official Sindh Sales Tax on Services registration authorizing electrical installations and goods repair services.",
     logo: "/images/logos/srb_logo.jpg"
@@ -26,7 +24,6 @@ const certificates = [
   {
     id: "fbr",
     name: "FBR Income Tax NTN Registration",
-    number: "Registration No: 4240123542475",
     issuer: "Federal Board of Revenue, RTO-I Karachi",
     description: "Registered Active Income Taxpayer status under the Federal Board of Revenue.",
     logo: "/images/logos/fbr_logo.jpg"
@@ -34,7 +31,6 @@ const certificates = [
   {
     id: "kcci",
     name: "KCCI Membership Certificate",
-    number: "Membership No: 150350",
     issuer: "Karachi Chamber of Commerce & Industry",
     description: "Registered member of the Karachi Chamber of Commerce and Industry.",
     logo: "/images/logos/kcci_logo.jpg"
@@ -42,7 +38,6 @@ const certificates = [
   {
     id: "pec",
     name: "PEC Firm Registration",
-    number: "Firm Registration",
     issuer: "Pakistan Engineering Council",
     description: "Corporate engineering registration authorizing electrical, mechanical, and professional HVAC contracting works.",
     logo: "/images/logos/pec_logo.jpg"
@@ -50,7 +45,6 @@ const certificates = [
   {
     id: "sessi",
     name: "SESSI Social Security Registration",
-    number: "Registration No: 2026030012",
     issuer: "Sindh Employees' Social Security Institution",
     description: "Employer registration under the SESSI social security scheme, ensuring healthcare and worker safety benefits.",
     logo: "/images/logos/sessi_logo.jpg"
@@ -58,7 +52,6 @@ const certificates = [
   {
     id: "labour",
     name: "Sindh Labour Department License",
-    number: "Registration No: LHRD-2026-02-22735",
     issuer: "Directorate General of Labour, Govt. of Sindh",
     description: "Shop and Commercial Establishment license issued under the Sindh Shops & Commercial Establishments Act, 2015.",
     logo: "/images/logos/labour_logo.jpg"
@@ -66,7 +59,6 @@ const certificates = [
   {
     id: "ipo",
     name: "IPO Trademark Registry",
-    number: "Trademark Registry",
     issuer: "Intellectual Property Organization of Pakistan",
     description: "Brand protection registration for the 'Ali Cool Point' trademark logo.",
     logo: "/images/logos/ipo_logo.jpg"
@@ -87,7 +79,7 @@ export default function Certifications() {
               Official Registrations & Verifications
             </h1>
             <p className="text-sm sm:text-base text-slate-400 mt-2 max-w-xl mx-auto">
-              Verified corporate registration numbers and active compliance statuses for contracting audits.
+              Verified corporate registrations and active compliance statuses for contracting audits.
             </p>
           </div>
         </section>
@@ -114,10 +106,9 @@ export default function Certifications() {
                         />
                       </div>
                       <div className="min-w-0 flex-1">
-                        <h3 className="font-heading text-xs font-bold text-slate-900 group-hover:text-primary transition-colors leading-tight truncate">
+                        <h3 className="font-heading text-xs font-bold text-slate-900 group-hover:text-primary transition-colors leading-tight">
                           {cert.name}
                         </h3>
-                        <span className="text-[10px] font-bold text-primary block mt-1 truncate">{cert.number}</span>
                       </div>
                     </div>
 
